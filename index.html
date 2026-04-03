@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SPM Messenger</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="login">
+  <h2>SPM Messenger</h2>
+  <input type="text" placeholder="Email">
+  <input type="password" placeholder="Password">
+  <button onclick="login()">Login</button>
+</div>
+
+<div id="app" style="display:none;">
+  <div class="sidebar">
+    <h3>Chats</h3>
+    <div onclick="openChat('Rahul')">Rahul</div>
+    <div onclick="openChat('Aman')">Aman</div>
+  </div>
+
+  <div class="chat">
+    <h3 id="chatName">Select Chat</h3>
+    <div id="messages"></div>
+
+    <div class="input">
+      <input id="msg" placeholder="Type message">
+      <button onclick="sendMsg()">Send</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
