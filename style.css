@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: black;
+  color: white;
+}
+
+#login {
+  text-align: center;
+  margin-top: 100px;
+}
+
+input {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  width: 200px;
+}
+
+button {
+  padding: 10px;
+  background: white;
+  color: black;
+  border: none;
+}
+
+#app {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 30%;
+  background: #111;
+  padding: 10px;
+}
+
+.chat {
+  width: 70%;
+  padding: 10px;
+}
+
+#messages {
+  height: 80%;
+  overflow-y: scroll;
+}
+
+.input {
+  display: flex;
+}
+
+.input input {
+  flex: 1;
+}
